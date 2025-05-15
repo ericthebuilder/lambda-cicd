@@ -18,8 +18,8 @@ Resources:
       Tags:
         - Key: Environment
           Value: !Ref Environment
-
-  Outputs: 
+        
+Outputs: 
     BucketName:
-      Description: 'Name of created S3 Bucket'
+      Description: 'Name of created S3 bucket'
       Value: !Ref MyS3Bucket
