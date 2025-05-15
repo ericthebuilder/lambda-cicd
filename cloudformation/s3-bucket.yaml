@@ -14,12 +14,12 @@ Resources:
   MyS3Bucket:
     Type: 'AWS::S3::Bucket'
     Properties:
-      BucketName: !Sub '${AWS::StackName}-${Environment}-bucket'
+      BucketName: !Sub '${AWS::StackName}-${Environment}-${AWS::Region}-${AWS::AccountId}-bucket'
       Tags:
         - Key: Environment
           Value: !Ref Environment
         
 Outputs: 
     BucketName:
-      Description: 'Name of created S3 bucket'
+      Description: 'Name of a nicely created S3 bucket'
       Value: !Ref MyS3Bucket
