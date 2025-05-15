@@ -21,5 +21,5 @@ Resources:
         
 Outputs: 
     BucketName:
-      Description: 'Name of a nicely icey spicey created S3 bucket'
+      Description: 'Name of a nicely icey created S3 bucket'
       Value: !Ref MyS3Bucket
